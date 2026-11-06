@@ -1,4 +1,4 @@
-# VANTA - Premium Signup Page
+  # TXNISH - Premium Signup Page
 
 A premium black and gold themed responsive signup page.
 
