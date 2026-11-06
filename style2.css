@@ -1,0 +1,383 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    --bg: #0B0B0D;
+    --card: #151518;
+    --gold: #D4AF75;
+    --heading: #F5E6C8;
+    --text: #A1A1AA;
+    --input: #29292F;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.container {
+  width: 100%;
+  max-width: 660px;
+  min-height: 400px;
+  padding: 30px 65px;
+  background: #0B0B0D;
+  border: 1px solid rgba(212, 175, 117, 0.4);
+  border-radius: 24px;
+  box-shadow: 0 0 25px rgba(212, 175, 117, 0.08);
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 30px;
+  z-index: 1;
+}
+
+#myform {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#myform input {
+  width: 100%;
+  height: 52px;
+  background: rgba(20, 20, 20, 0.8);
+  border: 1px solid rgba(212, 175, 117, 0.4);
+  border-radius: 12px;
+  padding: 0 20px;
+  color: var(--heading);
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+#myform input:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 10px rgba(212, 175, 117, 0.2);
+}
+input::placeholder {
+  color:#777780;
+  font-size: 13px;
+}
+h3 {
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 5px;
+  color: var(--heading);
+  letter-spacing: 1px;
+}
+
+#p1 , #p2 , #p3 {
+  color:#ff5555;
+  font-size: 12px;
+  margin-left: 3px;
+}
+
+.main-wrapper {
+  display: flex;
+  width:100% ;
+  min-height: 100vh;
+  
+}
+.left-section {
+  flex: 1;
+  background-image: url(Cinematic\ Black\ and\ Gold\ Creator\ Studio.png);
+  background-size: cover;
+  background-position: 15% center;
+  background-repeat: no-repeat;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+  background-image: url("right-bg.png.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  
+  color: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  font-size: 17px;
+  position: absolute;
+  top: 20px;
+  left:60px;
+  /* background: rgba(212, 175, 117, 0.12); */
+  transition: 0.3s ease;
+  gap : 20px
+}
+
+
+#tagline {
+  color: white;
+  font-size: 16px;
+  margin-top: 10px;
+  line-height:20px ;
+  max-width: 250px;
+}
+
+.password-box {
+  position: relative;
+}
+
+.password-box input {
+  width: 100%;
+  padding-right: 65px;
+}
+
+#togglepass {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  height: auto;
+  padding: 0;
+  background: transparent;
+  color: var(--gold);
+  border: none;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+#togglepass:hover {
+  background: transparent;
+  transform: translateY(-50%);
+}
+.container h2 {
+  color: white;
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.container h2::after {
+  content: "";
+  display: block;
+  width: 58px;
+  height: 3px;
+  background: var(--gold);
+  margin: 14px auto 0;
+  border-radius: 2px;
+  box-shadow: 0 0 8px rgba(212, 175, 117, 0.3);
+}
+
+#form-subtitle {
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+#hint {
+  font-size: 12px;
+  font-weight: 600;
+  margin-left: 3px;
+  min-height: 15px;
+}
+
+.left-section h1 {
+  
+  font-size: 40px;
+  color: white;
+  font-weight: 700;
+  margin-top: 25px;
+}
+
+.logo-mark {
+  width: 50px;
+  height: 50px; 
+  border-radius: 10px;
+  border: 1px solid var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold);
+  background: transparent;
+  font-weight: 700;
+  font-size: 40px;
+  color: #F5D18A;
+  text-shadow: 0 0 8px rgba(212, 175, 117, 0.5);
+}
+.logo-divider {
+  width: 1px;
+  height: 55px;
+  background-color:var(--gold);
+  box-shadow: 0 0 6px rgba(212, 175, 117, 0.5);
+}
+
+.logo-name {
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: var(--gold);
+  color: #F5D18A;
+  text-shadow: 0 0 10px rgba(212, 175, 117, 0.3);
+}
+
+.left-section h1 span {
+  color: var(--gold);
+  text-shadow: 0 0 12px rgba(212, 175, 117, 0.25);
+}
+
+.social-icon {
+  display: flex;
+  gap: 15px;
+  position: absolute;
+  bottom: 100px;
+  left: 50px;
+}
+
+.social-icon i {
+  font-size: 25px;
+  color: var(--gold);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.social-icon i:hover {
+  transform: translateY(-2px);
+  text-shadow: 0 0 12px rgba(212, 175, 117, 0.25);
+}
+
+.bg-black {
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0.55) 65%,
+    transparent
+  );
+  width: calc(100% + 40px);
+  margin-left: -40px;
+  padding: 25px 40px;
+}
+
+.gold-text {
+  color: var(--gold);
+}
+
+#form-subtitle {
+  color: var(--text);
+  font-size: 17px;
+  text-align: center;
+  line-height: 1.6;
+  margin-top: 18px;
+  margin-bottom: 35px;
+}
+
+#myform h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--heading);
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+#myform h3 i {
+  color: var(--gold);
+  font-size: 17px;
+}
+.signin {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.signin a {
+  color: var(--gold);
+  text-decoration: none;
+  border-bottom: 1px solid var(--gold);
+  padding-bottom: 3px;
+}
+
+#myform > button {
+  width: 100%;
+  height: 58px;
+  background: linear-gradient(135deg, #F5D18A, #D4AF75, #C99543);
+  color: #0B0B0D;
+  border: none;
+  border-radius: 12px;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#myform > button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 18px rgba(212, 175, 117, 0.3);
+}
+#myform > button:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+#success {
+  text-align: center;
+  margin-top: 12px;
+  color: var(--gold);
+}
+
+@media (max-width: 768px) {
+
+  .main-wrapper {
+    flex-direction: column;
+  }
+
+  .left-section {
+    min-height: 500px;
+    padding: 30px 25px 100px;
+  }
+
+  .logo {
+    left: 25px;
+    top: 20px;
+  }
+
+  .left-section h1 {
+    font-size: 30px;
+  }
+
+  .social-icon {
+    bottom: 25px;
+    left: 25px;
+  }
+
+  .right-section {
+    min-height: auto;
+    padding: 35px 16px;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 100%;
+    min-height: auto;
+    padding: 35px 22px;
+  }
+
+  .container h2 {
+    font-size: 30px;
+  }
+
+}
